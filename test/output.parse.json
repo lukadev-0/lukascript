@@ -1,0 +1,1200 @@
+{
+  "type": "Block",
+  "statements": [
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "my_variable",
+        "loc": {
+          "line": 1,
+          "col": 5
+        }
+      },
+      "value": null
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "number",
+        "loc": {
+          "line": 2,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "Number",
+        "value": "0",
+        "loc": {
+          "line": 2,
+          "col": 12
+        }
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "string",
+        "loc": {
+          "line": 3,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "String",
+        "value": "hello world",
+        "loc": {
+          "line": 3,
+          "col": 14
+        }
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "bool_true",
+        "loc": {
+          "line": 4,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "keyword",
+        "value": "true",
+        "text": "true",
+        "offset": 72,
+        "lineBreaks": 0,
+        "line": 4,
+        "col": 17
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "bool_false",
+        "loc": {
+          "line": 5,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "keyword",
+        "value": "false",
+        "text": "false",
+        "offset": 94,
+        "lineBreaks": 0,
+        "line": 5,
+        "col": 18
+      }
+    },
+    {
+      "type": "FunctionDef",
+      "name": {
+        "type": "Identifier",
+        "name": "my_function_name",
+        "loc": {
+          "line": 7,
+          "col": 4
+        }
+      },
+      "parameters": {
+        "type": "IdentifierList",
+        "identifiers": [
+          {
+            "type": "Identifier",
+            "name": "my_parameter",
+            "loc": {
+              "line": 7,
+              "col": 21
+            }
+          }
+        ]
+      },
+      "body": {
+        "type": "Block",
+        "statements": [
+          {
+            "type": "Return",
+            "value": {
+              "type": "Identifier",
+              "name": "my_parameter",
+              "loc": {
+                "line": 8,
+                "col": 10
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "FunctionDef",
+      "name": {
+        "type": "Identifier",
+        "name": "another_function",
+        "loc": {
+          "line": 10,
+          "col": 4
+        }
+      },
+      "parameters": {
+        "type": "IdentifierList",
+        "identifiers": []
+      },
+      "body": {
+        "type": "Block",
+        "statements": [
+          {
+            "type": "VariableDef",
+            "name": {
+              "type": "Identifier",
+              "name": "result",
+              "loc": {
+                "line": 11,
+                "col": 7
+              }
+            },
+            "value": {
+              "type": "FunctionCall",
+              "name": {
+                "type": "Identifier",
+                "name": "my_function_name",
+                "loc": {
+                  "line": 11,
+                  "col": 16
+                }
+              },
+              "parameters": {
+                "type": "ExpressionList",
+                "expressions": [
+                  {
+                    "type": "String",
+                    "value": "hello",
+                    "loc": {
+                      "line": 11,
+                      "col": 33
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "Return",
+            "value": {
+              "type": "Identifier",
+              "name": "result",
+              "loc": {
+                "line": 13,
+                "col": 10
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "FunctionDef",
+      "name": {
+        "type": "Identifier",
+        "name": "might_be_rickroll",
+        "loc": {
+          "line": 15,
+          "col": 4
+        }
+      },
+      "parameters": {
+        "type": "IdentifierList",
+        "identifiers": []
+      },
+      "body": {
+        "type": "Block",
+        "statements": [
+          {
+            "type": "FunctionDef",
+            "name": {
+              "type": "Identifier",
+              "name": "maybe_rickroll",
+              "loc": {
+                "line": 16,
+                "col": 6
+              }
+            },
+            "parameters": {
+              "type": "IdentifierList",
+              "identifiers": []
+            },
+            "body": {
+              "type": "Block",
+              "statements": [
+                {
+                  "type": "FunctionDef",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "rick_astley",
+                    "loc": {
+                      "line": 17,
+                      "col": 8
+                    }
+                  },
+                  "parameters": {
+                    "type": "IdentifierList",
+                    "identifiers": [
+                      {
+                        "type": "Identifier",
+                        "name": "pre",
+                        "loc": {
+                          "line": 17,
+                          "col": 20
+                        }
+                      },
+                      {
+                        "type": "Identifier",
+                        "name": "post",
+                        "loc": {
+                          "line": 17,
+                          "col": 25
+                        }
+                      }
+                    ]
+                  },
+                  "body": {
+                    "type": "Block",
+                    "statements": [
+                      {
+                        "type": "Return",
+                        "value": {
+                          "type": "ExpSum",
+                          "operator": {
+                            "type": "plus",
+                            "value": "+",
+                            "text": "+",
+                            "offset": 360,
+                            "lineBreaks": 0,
+                            "line": 18,
+                            "col": 47
+                          },
+                          "left": {
+                            "type": "ExpSum",
+                            "operator": {
+                              "type": "plus",
+                              "value": "+",
+                              "text": "+",
+                              "offset": 331,
+                              "lineBreaks": 0,
+                              "line": 18,
+                              "col": 18
+                            },
+                            "left": {
+                              "type": "Identifier",
+                              "name": "pre",
+                              "loc": {
+                                "line": 18,
+                                "col": 14
+                              }
+                            },
+                            "right": {
+                              "type": "String",
+                              "value": "Never gonna give you up!",
+                              "loc": {
+                                "line": 18,
+                                "col": 20
+                              }
+                            }
+                          },
+                          "right": {
+                            "type": "Identifier",
+                            "name": "post",
+                            "loc": {
+                              "line": 18,
+                              "col": 49
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "Return",
+                  "value": {
+                    "type": "FunctionCall",
+                    "name": {
+                      "type": "Identifier",
+                      "name": "rick_astley",
+                      "loc": {
+                        "line": 19,
+                        "col": 12
+                      }
+                    },
+                    "parameters": {
+                      "type": "ExpressionList",
+                      "expressions": [
+                        {
+                          "type": "String",
+                          "value": "Rick Astley - ",
+                          "loc": {
+                            "line": 19,
+                            "col": 24
+                          }
+                        },
+                        {
+                          "type": "String",
+                          "value": " (Rickroll)",
+                          "loc": {
+                            "line": 19,
+                            "col": 42
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "Return",
+            "value": {
+              "type": "Identifier",
+              "name": "function_nested_inside_of_nested_function",
+              "loc": {
+                "line": 20,
+                "col": 10
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "FunctionCall",
+      "name": {
+        "type": "Identifier",
+        "name": "my_function_name",
+        "loc": {
+          "line": 22,
+          "col": 1
+        }
+      },
+      "parameters": {
+        "type": "ExpressionList",
+        "expressions": [
+          {
+            "type": "String",
+            "value": "Hello World",
+            "loc": {
+              "line": 22,
+              "col": 18
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "a",
+        "loc": {
+          "line": 24,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "ExpSum",
+        "operator": {
+          "type": "plus",
+          "value": "+",
+          "text": "+",
+          "offset": 522,
+          "lineBreaks": 0,
+          "line": 24,
+          "col": 15
+        },
+        "left": {
+          "type": "ExpSum",
+          "operator": {
+            "type": "plus",
+            "value": "+",
+            "text": "+",
+            "offset": 518,
+            "lineBreaks": 0,
+            "line": 24,
+            "col": 11
+          },
+          "left": {
+            "type": "Number",
+            "value": "1",
+            "loc": {
+              "line": 24,
+              "col": 9
+            }
+          },
+          "right": {
+            "type": "Number",
+            "value": "2",
+            "loc": {
+              "line": 24,
+              "col": 13
+            }
+          }
+        },
+        "right": {
+          "type": "Number",
+          "value": "3",
+          "loc": {
+            "line": 24,
+            "col": 17
+          }
+        }
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "b",
+        "loc": {
+          "line": 25,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "ExpProduct",
+        "operator": {
+          "type": "multiply",
+          "value": "*",
+          "text": "*",
+          "offset": 540,
+          "lineBreaks": 0,
+          "line": 25,
+          "col": 15
+        },
+        "left": {
+          "type": "ExpProduct",
+          "operator": {
+            "type": "multiply",
+            "value": "*",
+            "text": "*",
+            "offset": 536,
+            "lineBreaks": 0,
+            "line": 25,
+            "col": 11
+          },
+          "left": {
+            "type": "Number",
+            "value": "1",
+            "loc": {
+              "line": 25,
+              "col": 9
+            }
+          },
+          "right": {
+            "type": "Number",
+            "value": "2",
+            "loc": {
+              "line": 25,
+              "col": 13
+            }
+          }
+        },
+        "right": {
+          "type": "Number",
+          "value": "3",
+          "loc": {
+            "line": 25,
+            "col": 17
+          }
+        }
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "c",
+        "loc": {
+          "line": 26,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "ExpProduct",
+        "operator": {
+          "type": "divide",
+          "value": "/",
+          "text": "/",
+          "offset": 554,
+          "lineBreaks": 0,
+          "line": 26,
+          "col": 11
+        },
+        "left": {
+          "type": "Number",
+          "value": "4",
+          "loc": {
+            "line": 26,
+            "col": 9
+          }
+        },
+        "right": {
+          "type": "Number",
+          "value": "2",
+          "loc": {
+            "line": 26,
+            "col": 13
+          }
+        }
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "d",
+        "loc": {
+          "line": 27,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "ExpProduct",
+        "operator": {
+          "type": "modulo",
+          "value": "%",
+          "text": "%",
+          "offset": 568,
+          "lineBreaks": 0,
+          "line": 27,
+          "col": 11
+        },
+        "left": {
+          "type": "Number",
+          "value": "4",
+          "loc": {
+            "line": 27,
+            "col": 9
+          }
+        },
+        "right": {
+          "type": "Number",
+          "value": "3",
+          "loc": {
+            "line": 27,
+            "col": 13
+          }
+        }
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "e",
+        "loc": {
+          "line": 28,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "ExpPow",
+        "left": {
+          "type": "Number",
+          "value": "2",
+          "loc": {
+            "line": 28,
+            "col": 9
+          }
+        },
+        "right": {
+          "type": "Number",
+          "value": "5",
+          "loc": {
+            "line": 28,
+            "col": 13
+          }
+        }
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "f",
+        "loc": {
+          "line": 29,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "ExpSum",
+        "operator": {
+          "type": "minus",
+          "value": "-",
+          "text": "-",
+          "offset": 600,
+          "lineBreaks": 0,
+          "line": 29,
+          "col": 15
+        },
+        "left": {
+          "type": "ExpSum",
+          "operator": {
+            "type": "plus",
+            "value": "+",
+            "text": "+",
+            "offset": 596,
+            "lineBreaks": 0,
+            "line": 29,
+            "col": 11
+          },
+          "left": {
+            "type": "Number",
+            "value": "1",
+            "loc": {
+              "line": 29,
+              "col": 9
+            }
+          },
+          "right": {
+            "type": "Number",
+            "value": "2",
+            "loc": {
+              "line": 29,
+              "col": 13
+            }
+          }
+        },
+        "right": {
+          "type": "ExpProduct",
+          "operator": {
+            "type": "modulo",
+            "value": "%",
+            "text": "%",
+            "offset": 616,
+            "lineBreaks": 0,
+            "line": 29,
+            "col": 31
+          },
+          "left": {
+            "type": "ExpProduct",
+            "operator": {
+              "type": "multiply",
+              "value": "*",
+              "text": "*",
+              "offset": 608,
+              "lineBreaks": 0,
+              "line": 29,
+              "col": 23
+            },
+            "left": {
+              "type": "ExpProduct",
+              "operator": {
+                "type": "multiply",
+                "value": "*",
+                "text": "*",
+                "offset": 604,
+                "lineBreaks": 0,
+                "line": 29,
+                "col": 19
+              },
+              "left": {
+                "type": "Number",
+                "value": "3",
+                "loc": {
+                  "line": 29,
+                  "col": 17
+                }
+              },
+              "right": {
+                "type": "Number",
+                "value": "4",
+                "loc": {
+                  "line": 29,
+                  "col": 21
+                }
+              }
+            },
+            "right": {
+              "type": "ExpPow",
+              "left": {
+                "type": "Number",
+                "value": "5",
+                "loc": {
+                  "line": 29,
+                  "col": 25
+                }
+              },
+              "right": {
+                "type": "Number",
+                "value": "5",
+                "loc": {
+                  "line": 29,
+                  "col": 29
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "Number",
+            "value": "3",
+            "loc": {
+              "line": 29,
+              "col": 33
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "g",
+        "loc": {
+          "line": 30,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "ExpSum",
+        "operator": {
+          "type": "minus",
+          "value": "-",
+          "text": "-",
+          "offset": 630,
+          "lineBreaks": 0,
+          "line": 30,
+          "col": 11
+        },
+        "left": {
+          "type": "Number",
+          "value": "2",
+          "loc": {
+            "line": 30,
+            "col": 9
+          }
+        },
+        "right": {
+          "type": "Number",
+          "value": "1",
+          "loc": {
+            "line": 30,
+            "col": 13
+          }
+        }
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "h",
+        "loc": {
+          "line": 31,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "ExpComparison",
+        "operator": {
+          "type": "lt",
+          "value": "<",
+          "text": "<",
+          "offset": 644,
+          "lineBreaks": 0,
+          "line": 31,
+          "col": 11
+        },
+        "left": {
+          "type": "Number",
+          "value": "1",
+          "loc": {
+            "line": 31,
+            "col": 9
+          }
+        },
+        "right": {
+          "type": "Number",
+          "value": "2",
+          "loc": {
+            "line": 31,
+            "col": 13
+          }
+        }
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "i",
+        "loc": {
+          "line": 32,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "ExpComparison",
+        "operator": {
+          "type": "lte",
+          "value": "<=",
+          "text": "<=",
+          "offset": 658,
+          "lineBreaks": 0,
+          "line": 32,
+          "col": 11
+        },
+        "left": {
+          "type": "Number",
+          "value": "1",
+          "loc": {
+            "line": 32,
+            "col": 9
+          }
+        },
+        "right": {
+          "type": "Number",
+          "value": "2",
+          "loc": {
+            "line": 32,
+            "col": 14
+          }
+        }
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "j",
+        "loc": {
+          "line": 33,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "ExpComparison",
+        "operator": {
+          "type": "gt",
+          "value": ">",
+          "text": ">",
+          "offset": 673,
+          "lineBreaks": 0,
+          "line": 33,
+          "col": 11
+        },
+        "left": {
+          "type": "Number",
+          "value": "1",
+          "loc": {
+            "line": 33,
+            "col": 9
+          }
+        },
+        "right": {
+          "type": "Number",
+          "value": "2",
+          "loc": {
+            "line": 33,
+            "col": 13
+          }
+        }
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "k",
+        "loc": {
+          "line": 34,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "ExpComparison",
+        "operator": {
+          "type": "gte",
+          "value": ">=",
+          "text": ">=",
+          "offset": 687,
+          "lineBreaks": 0,
+          "line": 34,
+          "col": 11
+        },
+        "left": {
+          "type": "Number",
+          "value": "1",
+          "loc": {
+            "line": 34,
+            "col": 9
+          }
+        },
+        "right": {
+          "type": "Number",
+          "value": "2",
+          "loc": {
+            "line": 34,
+            "col": 14
+          }
+        }
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "m",
+        "loc": {
+          "line": 35,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "ExpComparison",
+        "operator": {
+          "type": "nq",
+          "value": "!=",
+          "text": "!=",
+          "offset": 702,
+          "lineBreaks": 0,
+          "line": 35,
+          "col": 11
+        },
+        "left": {
+          "type": "Number",
+          "value": "2",
+          "loc": {
+            "line": 35,
+            "col": 9
+          }
+        },
+        "right": {
+          "type": "Number",
+          "value": "1",
+          "loc": {
+            "line": 35,
+            "col": 14
+          }
+        }
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "m",
+        "loc": {
+          "line": 36,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "ExpComparison",
+        "operator": {
+          "type": "eq",
+          "value": "==",
+          "text": "==",
+          "offset": 717,
+          "lineBreaks": 0,
+          "line": 36,
+          "col": 11
+        },
+        "left": {
+          "type": "Number",
+          "value": "2",
+          "loc": {
+            "line": 36,
+            "col": 9
+          }
+        },
+        "right": {
+          "type": "Number",
+          "value": "1",
+          "loc": {
+            "line": 36,
+            "col": 14
+          }
+        }
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "or",
+        "loc": {
+          "line": 38,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "ExpOr",
+        "left": {
+          "type": "keyword",
+          "value": "true",
+          "text": "true",
+          "offset": 732,
+          "lineBreaks": 0,
+          "line": 38,
+          "col": 10
+        },
+        "right": {
+          "type": "keyword",
+          "value": "false",
+          "text": "false",
+          "offset": 740,
+          "lineBreaks": 0,
+          "line": 38,
+          "col": 18
+        }
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "and",
+        "loc": {
+          "line": 39,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "ExpAnd",
+        "left": {
+          "type": "keyword",
+          "value": "true",
+          "text": "true",
+          "offset": 756,
+          "lineBreaks": 0,
+          "line": 39,
+          "col": 11
+        },
+        "right": {
+          "type": "keyword",
+          "value": "false",
+          "text": "false",
+          "offset": 764,
+          "lineBreaks": 0,
+          "line": 39,
+          "col": 19
+        }
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "unary",
+        "loc": {
+          "line": 40,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "ExpUnary",
+        "operator": {
+          "type": "not",
+          "value": "!",
+          "text": "!",
+          "offset": 782,
+          "lineBreaks": 0,
+          "line": 40,
+          "col": 13
+        },
+        "value": {
+          "type": "keyword",
+          "value": "true",
+          "text": "true",
+          "offset": 783,
+          "lineBreaks": 0,
+          "line": 40,
+          "col": 14
+        }
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "negative",
+        "loc": {
+          "line": 41,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "Number",
+        "value": "-1",
+        "loc": {
+          "line": 41,
+          "col": 16
+        }
+      }
+    },
+    {
+      "type": "VariableDef",
+      "name": {
+        "type": "Identifier",
+        "name": "negative_zero",
+        "loc": {
+          "line": 42,
+          "col": 5
+        }
+      },
+      "value": {
+        "type": "ExpUnary",
+        "operator": {
+          "type": "minus",
+          "value": "-",
+          "text": "-",
+          "offset": 826,
+          "lineBreaks": 0,
+          "line": 42,
+          "col": 21
+        },
+        "value": {
+          "type": "Identifier",
+          "name": "number",
+          "loc": {
+            "line": 42,
+            "col": 22
+          }
+        }
+      }
+    },
+    {
+      "type": "Assignment",
+      "name": {
+        "type": "Identifier",
+        "name": "my_variable",
+        "loc": {
+          "line": 44,
+          "col": 1
+        }
+      },
+      "value": {
+        "type": "FunctionCall",
+        "name": {
+          "type": "Identifier",
+          "name": "might_be_rickroll",
+          "loc": {
+            "line": 44,
+            "col": 15
+          }
+        },
+        "parameters": {
+          "type": "ExpressionList",
+          "expressions": []
+        }
+      }
+    }
+  ]
+}

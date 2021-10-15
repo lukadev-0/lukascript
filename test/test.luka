@@ -1,0 +1,44 @@
+var my_variable
+var number=0
+var string = 'hello world'
+var bool_true = true
+var bool_false = false
+
+fn my_function_name(my_parameter)
+  return my_parameter
+
+fn another_function()
+  var result = my_function_name("hello")
+
+  return result
+
+fn might_be_rickroll()
+  fn maybe_rickroll()
+    fn rick_astley(pre, post)
+      return pre + "Never gonna give you up!" + post
+    return rick_astley("Rick Astley - ", " (Rickroll)")
+  return function_nested_inside_of_nested_function
+
+my_function_name("Hello World")
+
+var a = 1 + 2 + 3
+var b = 1 * 2 * 3
+var c = 4 / 2
+var d = 4 % 3
+var e = 2 ^ 5
+var f = 1 + 2 - 3 * 4 * 5 ^ 5 % 3
+var g = 2 - 1
+var h = 1 < 2
+var i = 1 <= 2
+var j = 1 > 2
+var k = 1 >= 2
+var m = 2 != 1
+var m = 2 == 1
+
+var or = true || false
+var and = true && false
+var unary = !true
+var negative = -1
+var negative_zero = -number
+
+my_variable = might_be_rickroll()
